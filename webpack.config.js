@@ -3,6 +3,7 @@
 module.exports = {
     entry: './src/main.js',
     output: {
+      //publicPath: "/TN/",
         filename: 'bundle.js'
     },
     module: {
@@ -15,6 +16,7 @@ module.exports = {
         ]
     },
     devServer: {
-        port: 3000
+        host: '0.0.0.0',
+        port: 8081
     }
 };
